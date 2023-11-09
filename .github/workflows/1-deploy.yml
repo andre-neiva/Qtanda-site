@@ -8,7 +8,21 @@ on:
       - develop
       - main
 jobs:
+  prepare_code:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup nodeJS
+        uses: actions/setup-node@v3
+      
+      - name: Download dependencies
+        run: npm i
+
+      - name: Run Linter
+        run: npm run lint:fix
+
   deploy_dev_environment:
+    needs: prepare_code
     runs-on: ubuntu-latest
     environment: vercel_auth
     steps:

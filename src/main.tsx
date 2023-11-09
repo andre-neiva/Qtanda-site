@@ -11,6 +11,10 @@ const router = createBrowserRouter([
     element: <div>Rota Configurada</div>,
   },
   {
+    path: '/new-route-2',
+    element: <div>Rota Configurada 2</div>,
+  },
+  {
     path: '*',
     element: <App />,
   },

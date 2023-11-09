@@ -5,8 +5,7 @@ function App() {
   return (
     <>
       <main>Programe aqui rs</main>
-      <Link to={'new-route'}>Clique aqui</Link>
-      <Link to={'new-route-2'}>Clique aqui</Link>
+      <Link to={'new-route'}>Clique aqui para abrir</Link>
     </>
   );
 }

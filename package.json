@@ -47,5 +47,8 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "husky": {
+    "pre-commit": "npm run lint:fix && git add ."
   }
 }

@@ -6,6 +6,7 @@ function App() {
     <>
       <main>Programe aqui rs</main>
       <Link to={'new-route'}>Clique aqui</Link>
+      <Link to={'new-route-2'}>Clique aqui</Link>
     </>
   );
 }

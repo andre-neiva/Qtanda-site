@@ -6,6 +6,7 @@ on:
   push:
     branches:
       - develop
+      - main
 jobs:
   deploy_dev_environment:
     runs-on: ubuntu-latest

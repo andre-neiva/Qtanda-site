@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   return (
     <>
-      <main>Programe aqui rs</main>
+      <main>Programe aqui rss</main>
       <Link to={'new-route'}>Clique aqui para abrir</Link>
     </>
   );

@@ -1,23 +1,23 @@
-import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-import App from './App';
 import './index.css';
+import ForgetPassword from './pages/ForgetPassword';
+import Login from './pages/Login';
 
-//configurar router
+// Configure router
 const router = createBrowserRouter([
   {
-    path: '/new-route',
-    element: <div>Rota Configurada</div>,
+    path: '/login',
+    element: <Login></Login>,
+  },
+  {
+    path: '/forget-password',
+    element: <ForgetPassword></ForgetPassword>,
   },
   {
     path: '*',
-    element: <App />,
+    element: <Login></Login>,
   },
 ]);
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
-    <RouterProvider router={router}></RouterProvider>
-  </React.StrictMode>
-);
+ReactDOM.createRoot(document.getElementById('root')!).render(<RouterProvider router={router}></RouterProvider>);

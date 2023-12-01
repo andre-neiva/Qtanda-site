@@ -10,7 +10,7 @@
         "source.organizeImports": "always"
     },
     "[typescript]": {
-        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+        "editor.defaultFormatter": "vscode.typescript-language-features"
     },
     "editor.defaultFormatter": "dbaeumer.vscode-eslint",
     "editor.formatOnSave": true,
@@ -20,5 +20,8 @@
     },
     "[javascriptreact]": {
         "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "vscode.css-language-features"
     },
 }

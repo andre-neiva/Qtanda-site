@@ -1,0 +1,9 @@
+.generic-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    border: black 2px solid;
+    width: 40vw;
+    height: 30vh;
+}

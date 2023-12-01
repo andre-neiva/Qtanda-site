@@ -1,0 +1,27 @@
+.stepper-container {
+  border: 2px black solid;
+  width: 55vw;
+  height: 60vh;
+  display: flex;
+  background-color: #d2d2d2;
+  border-radius: 1rem;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  margin: 1rem;
+}
+
+.Btn{
+  border-radius: 0.5rem;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    background-color: #25BA00;
+    cursor: pointer;
+}

@@ -1,9 +1,8 @@
 // No componente SignUpStepper
 import React from 'react';
-import UploadPhoto from './components/UploadPhoto';
-import BasicDetails from './components/BasicDetails';
+import BasicDetails from './components/BasicDetails/BasicDetails';
 import SelectTime from './components/SelectTime';
-
+import UploadPhoto from './components/UploadPhoto';
 
 interface SignUpStepperProps {
   step: number;

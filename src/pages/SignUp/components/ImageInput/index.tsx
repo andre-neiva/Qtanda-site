@@ -32,13 +32,7 @@ const ImageInput: React.FC<ImageInputProps> = ({ onImageChange }) => {
       }}
     >
       {!imagePreview && 'Enviar Foto'}
-      <input
-        type="file"
-        accept="image/*"
-        id="fileInput"
-        onChange={handleFileChange}
-        className="image-input-input"
-      />
+      <input type="file" accept="image/*" id="fileInput" onChange={handleFileChange} className="image-input-input" />
     </label>
   );
 };

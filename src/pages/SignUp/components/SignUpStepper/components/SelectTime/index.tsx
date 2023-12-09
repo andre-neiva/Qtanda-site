@@ -1,10 +1,7 @@
-
-export default function SelectTime(){
-
+export default function SelectTime() {
   return (
     <div>
-        <p>Select Time</p>
+      <p>Select Time</p>
     </div>
   );
-};
-
+}

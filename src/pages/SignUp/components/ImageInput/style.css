@@ -1,0 +1,19 @@
+.image-input-label {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 1rem;
+    cursor: pointer;
+    color: black;
+    width: 13vw;
+    height: 25vh;
+    border: 1px black solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  
+  .image-input-input {
+    display: none;
+  }
+    

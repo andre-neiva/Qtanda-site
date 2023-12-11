@@ -53,3 +53,20 @@
     margin-bottom: 5px;
     margin-left: 10px;
 }
+
+.password-mismatch {
+    font-size: 12px;
+    font-weight: 500;
+    color: #DF0505;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+.weak-password {
+    font-size: 12px;
+    font-weight: 500;
+    color: #DF0505;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    max-width: 300px;
+}

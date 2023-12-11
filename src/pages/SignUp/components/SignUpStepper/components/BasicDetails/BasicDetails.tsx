@@ -9,6 +9,31 @@ export default function BasicDetails() {
   const [confirmPassword, setConfirmPassword] = useState('');
   const [cpf, setCpf] = useState('');
   const [confirmation, setConfirmation] = useState(false);
+  const [passwordMismatch, setPasswordMismatch] = useState(false);
+  const [weakPassword, setWeakPassword] = useState(false);
+
+  const isPasswordStrong = (password) => {
+    const strongPassWordRegex = /(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[^A-Za-z0-9])(?=.{8,})/;
+    return strongPassWordRegex.test(password);
+  };
+
+  const handlePasswordChange = (e) => {
+    setPassword(e.target.value);
+    if (!isPasswordStrong(e.target.value)) {
+      setWeakPassword(true);
+    } else {
+      setWeakPassword(false);
+    }
+  };
+
+  const handleConfirmPasswordChange = (e) => {
+    setConfirmPassword(e.target.value);
+    if (password && e.target.value !== password) {
+      setPasswordMismatch(true);
+    } else {
+      setPasswordMismatch(false);
+    }
+  };
 
   return (
     <div className="details-container">
@@ -45,8 +70,14 @@ export default function BasicDetails() {
             name="password"
             className="input-container"
             value={password}
-            onChange={(e) => setPassword(e.target.value)}
+            onChange={handlePasswordChange}
           />
+          <br />
+          {weakPassword && (
+            <p className="weak-password">
+              A senha deve conter pelo menos um número, um caractere especial e uma letra maiúscula.
+            </p>
+          )}
         </label>
         <label className="label-text">
           Nome completo:
@@ -69,8 +100,10 @@ export default function BasicDetails() {
             name="confirmPassword"
             className="input-container"
             value={confirmPassword}
-            onChange={(e) => setConfirmPassword(e.target.value)}
+            onChange={handleConfirmPasswordChange}
           />
+          <br />
+          {passwordMismatch && <span className="password-mismatch">As senhas não são iguais</span>}
         </label>
         <label className="label-text">
           CPF:

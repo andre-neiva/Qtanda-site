@@ -4,7 +4,6 @@ import UploadPhoto from './components/UploadPhoto';
 import BasicDetails from './components/BasicDetails';
 import SelectTime from './components/SelectTime';
 
-
 interface SignUpStepperProps {
   step: number;
 }

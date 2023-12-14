@@ -1,11 +1,7 @@
-
-
-export default function BasicDetails(){
-
+export default function BasicDetails() {
   return (
     <div>
-        <p>Basic Details</p>
+      <p>Basic Details</p>
     </div>
   );
 }
-

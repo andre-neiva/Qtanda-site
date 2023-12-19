@@ -1,0 +1,89 @@
+:root{
+    --text-color: #000000;
+    --border-color: #ffffff;
+    --bg-color: #ffffff;
+    --warning-color: #DF0505;
+}
+.details-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+    padding-left: 30px;
+}
+
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.label-text {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--text-color);
+    margin-bottom: 5px;
+}
+
+.input-container {
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--bg-color);
+    height: 18px;
+    width: 300px;
+    max-width: 300px;
+    margin-bottom: 10px;
+    margin-right: 30px;
+}
+
+.input-container:-webkit-autofill,
+.input-container:-webkit-autofill:hover, 
+.input-container:-webkit-autofill:focus, 
+.input-container:-webkit-autofill:active {
+    -webkit-text-fill-color: var(--text-color) !important;
+    -webkit-box-shadow: 0 0 0px 1000px var(--border-color) inset !important;
+}
+
+.checkbox-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    max-width: 320px;
+}
+
+.confirmation-text {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--text-color);
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+.password-mismatch {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--warning-color);
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+.weak-password {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--warning-color);
+    margin-bottom: 5px;
+    margin-left: 10px;
+    max-width: 300px;
+}
+
+.password-icon {
+    position: relative;
+    right: 55px;
+    top: 3px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: var(--text-color);
+}

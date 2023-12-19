@@ -36,7 +36,7 @@ Rodar o lint no projeto:
   npm run lint:fix
 ```
 
-Para commitar com [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/):
+Para commitar com [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/):§
 
 ```bash
   npm run commit

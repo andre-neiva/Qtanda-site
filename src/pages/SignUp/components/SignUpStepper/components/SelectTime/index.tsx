@@ -42,7 +42,7 @@ function App() {
           <h2>{time.day}</h2>
           <label className="label-text">
             Aberto das:
-            <p>
+            <p className="time-inputs">
               <input
                 type="time"
                 name="start"
@@ -55,7 +55,7 @@ function App() {
           </label>
           <label className="label-text">
             e também das:
-            <p>
+            <p className="time-inputs">
               <input
                 type="time"
                 name="secondStart"

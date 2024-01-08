@@ -1,60 +1,69 @@
-:root{
-    --text-color: #000000;
-    --bg-color: #ffffff;
+:root {
+    --bg-color: #fff;
+    --text-color: #333;
+    --secondary-text-color: #666;
+    --font-size: 1em;
+    --secondary-font-size: 0.8em;
 }
 .container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-    margin: 0 12px;
-    justify-content: center;
-    align-items: center;    
+    gap: 1%;
+    margin: 1%;
 }
 
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 .card {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 5px;
-    padding: 5px;
+    padding: 1%;
+    border-radius: 1vh;
     background-color: var(--bg-color);
-    margin-bottom: 10px;
+    box-shadow: 0 0 0.5vh 0 rgba(0, 0, 0, 0.2);
+    max-width: 100%;
+    min-width: 90%;
 }
 
 .card h2 {
-    font-size: 14px;
-    margin: 0 0 5px;
-    color: #333;
+    font-size: calc(var(--font-size) * 1);
+    margin: 0 0 0.5vh;   
+    color: var(--text-color);
 }
 
 .card p {
-    font-size: 12px;
-    margin: 0 0 5px;
-    color: #666;
+    font-size: var(--secondary-font-size);
+    margin: 0 0 0.5vh;
+    color: var(--secondary-text-color);
+    max-width: 100%;
 }
 
 .card input[type="time"] {
-    font-size: 12px;
-    margin: 0 2px;
-    width: 70px;
+    font-size: 12px; 
+    width: 40%;
     background-color: #d9d9d9;
     border: none;
-    border-radius: 5px;
-    color: #000000;
+    border-radius: 0.5vh;
+    padding: 1%;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.time-inputs{
+    white-space: nowrap;
+    overflow: auto;
 }
 
 .label-text {
     font-size: 12px;
-    margin:0 0 7px;
+    margin:0 0 1vh;
     color: var(--text-color);
     text-align: center      ;
-}
-
-.card input[type="time"] {
-    font-size: 12px;
-    margin: 0 2px;
-    width: 65px;
 }
 
 .optional-text {
